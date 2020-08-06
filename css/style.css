@@ -1,0 +1,105 @@
+@media screen and (max-width: 1180px) {
+  .mobile {
+    display: block;
+  }
+  .header {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .mobile {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+}
+
+.mobile {
+  background-color: #293341;
+}
+
+.header {
+  background-color: #293341;
+  padding: 15px 0px;
+}
+
+.header .brand {
+  text-align: center;
+}
+
+.header .menu {
+  margin-top: 10px;
+}
+
+.header .menu a {
+  color: white;
+  font-size: 15px;
+}
+
+.header .menu a:hover {
+  color: orange;
+}
+
+.line {
+  border-bottom: 2px solid #293341;
+}
+
+.more {
+  float: right;
+}
+
+.more a {
+  text-decoration: none;
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+
+.more a:hover {
+  text-decoration: none;
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+.products div {
+  text-align: center;
+}
+
+.footer {
+  background-color: #293341;
+}
+
+.footer .introduce p {
+  color: white;
+  font-size: 12px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.footer .infor {
+  margin-top: 50px;
+}
+
+.footer .infor h5 {
+  color: white;
+  font-size: 16px;
+}
+
+.footer .infor p {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.footer .fanpage {
+  margin-top: 95px;
+  margin-bottom: 50px;
+}
+
+.footer .fanpage h3 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=style.css.map */

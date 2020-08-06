@@ -1,0 +1,98 @@
+$backgroundColor: #293341;
+$orangeColor: orange;
+$whiteColor: white;
+$blueColor: blue;
+@mixin colorVsFontsize($color, $fontSize) {
+    color: $color;
+    font-size: $fontSize;
+}
+
+@media screen and (max-width: 1180px) {
+    .mobile {
+        display: block;
+    }
+    .header {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .mobile {
+        display: none;
+    }
+    .header {
+        display: block;
+    }
+}
+
+.mobile {
+    background-color: $backgroundColor;
+}
+
+.header {
+    background-color: $backgroundColor;
+    padding: 15px 0px;
+
+    .brand {
+        text-align: center;
+    }
+    .menu {
+        margin-top: 10px;
+         a {
+                @include colorVsFontsize(white,15px );
+                &:hover {
+                    color: $orangeColor;
+                }
+            }
+    }
+}
+.line {
+    border-bottom: 2px solid $backgroundColor;
+}
+.more {
+    float: right;
+    a {
+        text-decoration: none;
+        color: $orangeColor;
+        border-bottom: 1px solid $orangeColor;
+        &:hover {
+            text-decoration: none;
+            color: $blueColor;
+            border-bottom: 1px solid $blueColor;
+        }
+    }
+}
+.products {
+    div {
+        text-align: center;
+    }
+}
+.footer {
+    background-color: $backgroundColor;
+    .introduce {
+        p {
+            @include colorVsFontsize(white,12px );
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+    }
+    .infor {
+        margin-top: 50px;
+        h5 {
+            @include colorVsFontsize(white,16px );
+        }
+        p {
+            @include colorVsFontsize(white,12px );      
+            margin-bottom: 5px;      
+        }
+    }
+    .fanpage {
+        margin-top: 95px;
+        margin-bottom: 50px;;
+        h3 {
+            @include colorVsFontsize(white,20px );
+            margin-bottom: 30px;
+        }
+    }
+}
+
