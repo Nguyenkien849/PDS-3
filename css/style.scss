@@ -24,7 +24,14 @@ $blueColor: blue;
         display: block;
     }
 }
-
+@media screen and (min-width: 350px) and (max-width: 768px) {
+    .footer {
+        text-align: center;
+        .fanpage {
+            margin-top: 0px !important;
+        }
+    }
+}
 .mobile {
     background-color: $backgroundColor;
 }
