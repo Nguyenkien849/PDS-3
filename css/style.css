@@ -16,12 +16,21 @@
   }
 }
 
-@media screen and (min-width: 350px) and (max-width: 768px) {
+@media screen and (min-width: 250px) and (max-width: 768px) {
   .footer {
     text-align: center;
   }
   .footer .fanpage {
     margin-top: 0px !important;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 576px) {
+  .line h3 {
+    font-size: 20px;
+  }
+  .more a {
+    font-size: 12px;
   }
 }
 
@@ -49,6 +58,10 @@
 
 .header .menu a:hover {
   color: orange;
+}
+
+.banner {
+  padding: 0px !important;
 }
 
 .line {
